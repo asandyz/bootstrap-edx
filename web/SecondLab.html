@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	Author : Sandeep Lakka
+
+	directory structure:
+	   BootstrapDemos
+	   |_scripts
+	   |  \__{bootstrap and jquery scripts}
+	   |_styles
+	   |  \__{default bootstrap css files}
+	   |_web
+	      \__SecondLab.html { This page }
+
+	 Please note that this is done using Sublime Text 2 in Windows :)
+	-->
+	<title>Lab 2 Hands-on!</title>
+	<link href="../styles/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<!--Web view content -->
+	<div class="container">
+	<div class="jumbotron">
+		<h1>Submit Album</h1>
+	</div>
+	<div class="panel-group" id="panel-group-container">
+		<!-- Album Title and Artist Panel and It'll be collapsed by default -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#panel-group-container" href="#album-title-info">
+						Album Title and Artist
+					</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse in" id="album-title-info">
+				<div class="panel-body">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat urna lectus, eu feugiat sapien ullamcorper eget. In accumsan eros at est porttitor sagittis. Etiam viverra nisi in quam bibendum facilisis. Quisque porta 
+				</div>
+			</div>
+		</div>
+		<!-- Track Information panel -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#panel-group-container" href="#track-info">
+						Track Information
+					</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse" id="track-info">
+				<div class="panel-body">
+					Cras ullamcorper ligula purus, non varius nisl ornare eu. Ut tellus odio, facilisis sit amet lorem id, rhoncus pretium mauris. Praesent eleifend tortor quis erat posuere volutpat condimentum eu nisi. Donec vel consectetur 
+				</div>
+			</div>
+		</div>
+		<!-- Expert Review panel -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#panel-group-container" href="#expert-review">
+						Expert Review
+					</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse" id="expert-review">
+				<div class="panel-body">
+					In mi massa, tempor in elit vel, viverra pharetra lacus. Maecenas mollis lobortis facilisis. Proin eleifend libero eu consequat fringilla. Aenean viverra laoreet risus. Nam feugiat ante ac nisi euismod euismod. Integer venenatis 
+				</div>
+			</div>
+		</div>
+	</div><!-- end of panel-group div -->
+</div>
+	<!-- Scripts added at the end to make pages load faster! -->
+	<!-- Please ensure to add jquery first and then bootstrap js files as bootstrap depends on jquery -->
+	<script type="text/javascript" src="../scripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../scripts/bootstrap.min.js" ></script>
+</body>
+</head>
+</html>

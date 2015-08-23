@@ -1,0 +1,44 @@
+<!--
+
+	Author : Sandeep Lakka
+	Tabs webpage, previewing the tabs capability of the the bootstrap
+	Observations :
+	* For tabs or dropdowns and Hamburger capability (similar collapse or toggle functionality)
+	  is possible only with the inclusion of the javascript.
+	* While adding javascript , please ensure the independent javascript jquery first then
+	  Add the bootstrap javascript that depends on the jquery.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web with Tabs!</title>
+	<link rel="stylesheet" href="../styles/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+	<ul class="nav nav-tabs" role="tablist">
+		<li class="active"> <a href="#home" role="tab" data-toggle="tab">Home</a></li>
+		<li> <a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+		<li> <a href="#about" role="tab" data-toggle="tab">About</a></li>
+	</ul>
+	<div class="tab-content fade in">
+		<div class="active tab-pane" id="home">
+			<h3>Home</h3>
+			<p>Some content here for Home </p>
+		</div>
+		<div class="tab-pane fade" id="profile">
+			<h3>Profile</h3>
+			<p>Some content here for Profile</p>
+		</div>
+		<div class="tab-pane fade" id="about">
+			<h3>About</h3>
+			<p>Some content here About</p>
+		</div>
+	</div>
+</div>
+	<!-- Scripts are added at the end to load pages faster -->
+	<!-- Please ensure to add jquery first and then bootstrap js files as bootstrap depends on jquery -->
+	<script type="text/javascript" src="../scripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../scripts/bootstrap.min.js" ></script>
+</body>
+</html>
