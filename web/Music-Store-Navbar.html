@@ -1,0 +1,116 @@
+<!--
+	Author : Sandeep Lakka
+	Placement Control     -->
+<!DOCTYPE html>
+<htmL>
+<head>
+	<title>Music Store-Placement Control</title>
+	<!--Used the Theme "Readable" from bootswatch { link : http://bootswatch.com/readable/} 
+	< -	directory structure:
+	< BootstrapDemos
+	   |_custom
+	   |  \__bootstrap.min.css ( Readable theme bootstrap css file )
+	   |  \__bootstrap.css
+	   |_scripts
+	   |  \__{bootstrap and jquery scripts}
+	   |_styles
+	   |  \__{default bootstrap css files}
+	   |_AlbumDetails.html (this webpage)
+
+	-->
+	<link rel="stylesheet" href="../styles/bootstrap.min.css">
+	<!-- notice that the custom css is added after the bootstrap css -->
+	<style>
+       body { padding-top: 70px; }
+       .navbar-fixed-top { background-color: rgba(255,255,255,0.9); }
+       .active .well { background-color: rgba(30,30,30,0.3);}
+     </style>
+</head>
+<body>
+	<!-- Start Navigation bar -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="./AlbumDetails.html" class="navbar-brand">Home</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navigation">
+					<span class="sr-only">Navigation toggle</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div><!-- end of navbar-header div -->
+			<!-- Notice that the text "Sample text" and two links "Go to Google!" and "Follow us!" are hidden in small and 
+				 extra-small device displays.
+			-->
+			<div class="navbar-text hidden-sm hidden-xs">
+  				Sample text
+			</div>
+			<div class="navbar-text navbar-right hidden-sm hidden-xs">
+				<a class="navbar-link" href="http://www.google.com">Go to Google!</a>
+			</div>
+			<div class="navbar-text navbar-right hidden-sm hidden-xs">
+				<a class="navbar-link" href="./AlbumDetails.html">Follow us!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="hamburger-navigation">
+			<ul class="nav navbar-nav" role="menu">
+				<li class="active"><a href="#">Current Page </a></li>
+				<li><a href="#">Another Page</a></li>
+				<li><a href="#">Yet Another Page</a></li>
+				<li class="dropdown">
+     				<a class="dropdown-toggle" role="button" data-toggle="dropdown">
+     					Dropdown<span class="caret"/>
+     				</a>
+    				<ul class="dropdown-menu">
+      					<li><a href="#">Option one</a></li>
+      					<li><a href="#">Option two</a></li>
+    				</ul>
+   				</li>
+			</ul>
+		</div><!-- end of hamburger-navigation id section -->
+		</div><!-- end of container-fluid div -->
+	</nav>
+	<!-- End Navigation bar -->
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Music Store</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="../media/Album.gif" alt="Album disc image"/>
+			</div>
+			<div class="col-md-8">
+				<h2>Album Title</h2>
+				<h2>Artist</h2>
+				Lorem ipsum dolor sit amet, his an nemore intellegam, eloquentiam definitiones eu vix, sea eirmod menandri et. Vidit natum malis usu id, sed cu melius iracundia. Accumsan copiosae sea ad, ei pri tantas ancillae salutatus, cum cu vide duis molestiae. Sit quem veniam accusata ut, torquatos posidonium ex eos. Mel ut modo vidit corpora, ea nec nibh justo persequeris, summo omnesque eum ei. Ex qui maiorum fuisset.
+			</div>
+		</div><!-- end of row div-->
+		<!-- below  row elements are the essense of this page functionality
+		If viewed on xtra-small devices or small devices, "More Important Data" will be coming first followed by "Less Important Data"
+		But, if viewed on medium,large devices, "More Important Data" will be pushed to right side and "Less Important Data" will be pulled left. Thus flipping the priorities of the elements.
+
+		This could be very useful if designing a responsive web apps that'll pop out critical options like "Buy Now!" or "Like us!" ,keeping the less important - like details - below .
+		Also, please note that while using the bootstrap , design apps such that they are mobile first, later modify to make it compatible with larger screen devices.
+		-->
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-md-push-6">
+				<h3>More Important Data</h3>
+				<p>Lorem ipsum dolor sit amet, his an nemore intellegam, eloquentiam definitiones eu vix, sea eirmod menandri et. Vidit natum malis usu id, sed cu melius iracundia. Accumsan copiosae sea ad, ei pri tantas ancillae salutatus, cum cu vide duis molestiae. Sit quem veniam accusata ut, torquatos posidonium ex eos. Mel ut modo vidit corpora, ea nec nibh justo persequeris, summo omnesque eum ei. Ex qui maiorum fuisset.</p>
+			</div>
+			<div class="col-xs-12 col-md-6 col-md-pull-6">
+				<h3>Less Important Data</h3>
+				<p>Lorem ipsum dolor sit amet, his an nemore intellegam, eloquentiam definitiones eu vix, sea eirmod menandri et. Vidit natum malis usu id, sed cu melius iracundia. Accumsan copiosae sea ad, ei pri tantas ancillae salutatus, cum cu vide duis molestiae. Sit quem veniam accusata ut, torquatos posidonium ex eos. Mel ut modo vidit corpora, ea nec nibh justo persequeris, summo omnesque eum ei. Ex qui maiorum fuisset.</p>
+			</div>
+		</div><!-- end of row div -->
+		<div class="debug">
+			<h1 class="visible-xs">Extra Small</h1>
+			<h1 class="visible-sm">Small</h1>
+			<h1 class="visible-md">Medium</h1>
+			<h1 class="visible-lg">Large</h1>
+			<h1 class="visible-print">Print</h1>
+		</div><!-- end of debug div -->
+	</div><!--end of container div -->
+	<!-- Please ensure to add jquery first and then bootstrap js files as bootstrap depends on jquery -->
+	<script type="text/javascript" src="../scripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../scripts/bootstrap.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordian Example</title>
+	<link href="../styles/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="panel-group" id="panel-group-container">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">
+						<a data-toggle="collapse" data-parent="#panel-group-container" href="#first-panel-content">
+						First Panel
+						</a>
+					</h2>
+				</div>
+				<div class="panel-collapse collapse in" id="first-panel-content">
+					<div class="panel-body">
+						Sample content for first panel
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">
+						<a data-toggle="collapse" data-parent="#panel-group-container" href="#second-panel-content">
+						Second Panel
+						</a>
+					</h2>
+				</div>
+				<div class="panel-collapse collapse" id="second-panel-content">
+					<div class="panel-body">
+						Sample content for the second panel
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">
+						<a data-toggle="collapse" data-parent="#panel-group-container" href="#third-panel-content">
+					 	Third Panel
+					 	</a>
+					 </h2>
+				</div>
+				<div class="panel-collapse collapse" id="third-panel-content">
+					<div class="panel-body">
+						Sample content for the third panel
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end of container div -->
+	<!-- Scripts are added at the end to load pages faster -->
+	<script type="text/javascript" src="../scripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../scripts/bootstrap.min.js" ></script>
+
+</body>
+</html>
